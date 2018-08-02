@@ -1,0 +1,139 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Basic Page Needs
+    ================================================== -->
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>موجود</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="#" type="image/x-icon">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css"  href="css/bootstrap-arabic.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+<link href="css/animate.css" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="style.css">
+<link rel="stylesheet" type="text/css"  href="css/custemStyle.css">
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900|Lato:300,400|Crimson+Text:400,400i,600' rel='stylesheet' type='text/css'>
+
+<!-- Swtich colors by using the below code -->
+<!-- <link rel="stylesheet" type="text/css"  href="color-orange.css"> -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body  class="home">
+    <header id="menutop" > 
+  
+  <!-- Navigation
+    ==========================================-->
+  <div id="top-menu" class="navbar navbar-default navbar-fixed-top"> 
+    
+    <!--Header top-->
+     
+    <!--/Header top-->
+    
+    <div class="container"> 
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="pull-left">
+
+                <div class="navbar-header">
+<%--                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>--%>
+                    <a class="navbar-brand" href="index.aspx"> 
+                        <img class="logo" style="width:300px; margin-right:-60px" src="img/LOGO5.png" alt="موجود" title="موجود"/> </a>
+                </div>
+            </div>
+            <%--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 
+                
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="index.html" class="page-scroll active-on">Our Home</a></li>
+                    <li>
+                        <a href="blog-post.html" class="page-scroll">Single</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Sub Menu 1</a></li>
+                            <li><a href="#">Sub Menu 2</a></li>
+                            <li><a href="#">Sub Menu 3</a></li>
+                            <li>
+                                <a href="#">Sub Menu 4 </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Deep Menu 1 </a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Sub Deep 1</a></li>
+                                            <li><a href="#">Sub Deep 2</a></li>
+                                            <li><a href="#">Sub Deep 3</a></li>
+                                            <li><a href="#">Sub Deep 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Deep Menu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Sub Menu 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="page.html">Page</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>--%>
+                <!-- /.navbar-collapse -->
+            </div>
+       
+    <!-- /.container-fluid --> 
+    
+  </div>
+</header>
+   
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/jquery.waypoints.min.js"></script> 
+     <script type="text/javascript" src="js/main.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script> 
+<script>
+new WOW().init();
+</script>
+</body>
+</html>
