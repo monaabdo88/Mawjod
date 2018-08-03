@@ -3710,7 +3710,11 @@ embed, iframe, object {
 	background-position: center;
 	padding: 0px 0;
 	position: relative;
+<<<<<<< 52f11ac17cdf37e556215e9253796f1a30418b55
 	height: 100vh;
+=======
+	height: 85vh;
+>>>>>>> update project files
 }
 #home-banner:before {
 	content: "";
@@ -3739,12 +3743,22 @@ embed, iframe, object {
 	font-weight: 300;
 	text-transform: uppercase;
 }
+<<<<<<< 52f11ac17cdf37e556215e9253796f1a30418b55
 #home-banner p {
 	color: #fff;
 	font-size: 20px;
 	max-width: 800px;
 	margin: 80px 0;
 }
+=======
+    #home-banner p {
+        color: #fff;
+        font-size: 20px;
+        max-width: 800px;
+        margin: 80px 0;
+        line-height: 25px;
+    }
+>>>>>>> update project files
 #home-banner a {
 	margin-right: 30px;
 }
@@ -3802,7 +3816,11 @@ to {
 -----------------*/
 
 #about-us-block {
+<<<<<<< 52f11ac17cdf37e556215e9253796f1a30418b55
 	padding: 100px 0;
+=======
+	padding: 50px 0;
+>>>>>>> update project files
 }
 #about-us-block h2 {
 	font-size: 32px;
@@ -3860,6 +3878,7 @@ to {
 	margin-bottom: 40px;
 }
 .col-about-us p {
+<<<<<<< 52f11ac17cdf37e556215e9253796f1a30418b55
 	color: #73757d;
 	font-size: 16px;
 	line-height: 1.6;
@@ -3869,6 +3888,19 @@ to {
 	color: #404040;
 	font-weight: 600;
 }
+=======
+	color: #73757d !important;
+	font-size: 16px !important;
+	line-height: 1.6;
+	font-family: 'Crimson Text', serif;
+}
+    .col-about-us h4 {
+        color: #404040;
+        font-weight: 600;
+        font-size: 26px;
+        margin-bottom: 2px;
+    }
+>>>>>>> update project files
 /*----------------
 5.2 Why choose us
 -----------------*/

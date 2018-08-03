@@ -27,7 +27,11 @@ Partial Class Hajj
     Dim mailcode As String
     Dim QRNum As String
     Dim cmd As SqlCommand
+<<<<<<< 52f11ac17cdf37e556215e9253796f1a30418b55
     Dim SQLdr As SqlDataReader
+=======
+    Dim SQLdr1 As SqlDataReader
+>>>>>>> update project files
 
     Private Sub readqrcode()
         Dim reader = New BarcodeReader()
@@ -37,7 +41,30 @@ Partial Class Hajj
 
         If result IsNot Nothing Then
             QRNum = result.Text
+<<<<<<< 52f11ac17cdf37e556215e9253796f1a30418b55
             LBLQRCode.Value = result.Text
+=======
+            Session("QRCode") = QRNum
+            LBLQRCode.Value = result.Text
+            QRNum = Session("QRCode")
+
+            Try
+                con.Open()
+            Catch ex As Exception
+                con.Close()
+                con.Open()
+            End Try
+            Label1.Text = QRNum
+            cmd = New SqlCommand("SELECT  Pilgrim_ID FROM Pilgrim WHERE Pilgrim_ID = '" & QRNum & "'", con)
+            SQLdr1 = cmd.ExecuteReader
+            If (SQLdr1.Read) Then
+                If (SQLdr1(0).ToString = QRNum) Then
+                    Response.Redirect("pilgrimHome.aspx")
+                Else
+                    LBLQRCode.Value = "الباركود ليس مسجل كحاج"
+                End If
+            End If
+>>>>>>> update project files
         End If
     End Sub
     Sub readQR(ByVal sender As Object, ByVal e As EventArgs)
@@ -49,7 +76,11 @@ Partial Class Hajj
             If LBLQRCode.Value IsNot Nothing Then
                 QRNum = LBLQRCode.Value
             Else
+<<<<<<< 52f11ac17cdf37e556215e9253796f1a30418b55
                 LBLQRCode.Value = "أرجو إرفاق صورة الباركود أو كتابة رقم التصريح"
+=======
+                LBLQRCode.Value = "الرجاء إرفاق صورة الباركود أو كتابة رقم التصريح"
+>>>>>>> update project files
 
             End If
 
@@ -60,6 +91,7 @@ Partial Class Hajj
 
     Sub enter(ByVal sender As Object, ByVal e As EventArgs)
 
+<<<<<<< 52f11ac17cdf37e556215e9253796f1a30418b55
         Try
             con.Open()
         Catch ex As Exception
@@ -76,6 +108,14 @@ Partial Class Hajj
             End If
         End If
 
+=======
+       
+
+    End Sub
+
+    Protected Sub LinkButton2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles LinkButton2.Click
+       
+>>>>>>> update project files
 
     End Sub
 End Class

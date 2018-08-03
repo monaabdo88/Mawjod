@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false"
     CodeFile="index.aspx.vb" Inherits="index" %>
 
+<<<<<<< 52f11ac17cdf37e556215e9253796f1a30418b55
+=======
+
+>>>>>>> update project files
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server"
     style="background-image: url(img/bg-1.jpg)">
     <form id="form2" runat="server">
@@ -14,6 +18,7 @@
     </style>
     <div id="home-banner" style="background-image: url(img/bg-1.jpg);">
         <div class="content text-right">
+<<<<<<< 52f11ac17cdf37e556215e9253796f1a30418b55
             <div class="container" data-wow-duration="1s">
                 <h1 class="wow fadeInUp text-center">
                     MOBILE first APPROACH!
@@ -34,6 +39,35 @@
                         <img class="img-responsive user-icon" src="img/hamlati.png" alt="حملة" />
                         <a class="btn btn-outline-default wow fadeInLeft user-btn" href="campaignLogin.aspx">حملة</a>
                     </div>
+=======
+            <div class="container row" data-wow-duration="1s">
+                <div class="col-md-7 col-sm-12">
+                    <h1 class="wow fadeInUp text-left">انت معنا دائما مع اهلك واصدقائك</h1>
+                    <h3 class="wow fadeInUp text-left sub-title"> موجود هي اكبر منصة تربط الحجاج بالكشافة, الحكومة, اصحاب الحملات وزويهم لايجاد الحجاج المفقودين والتاهين اسرع </h3>
+                    <div class="clearfix">
+                 </div>
+                </div>
+                <div id="users-buttons" class="col-md-5 col-md-12">
+                    <div class="row">
+                    <div class="col-md-6 user-part bord-left">
+                        <h2>الحجاج</h2>
+                        <img class="img-responsive user-icon" src="img/hajj.png" alt="حاج" />
+                        <p class="no-mar">هنا يمكنك تسجيل بلاغ بالتائهين والمفقودين ومعرفة حالتهم</p>
+                        <a class="btn btn-outline-default wow fadeInLeft user-btn home-btn" href="PilgrimLogin.aspx">
+                            تسجيل كحاج</a>
+                    </div>
+                    <div class="col-md-6 user-part">
+                        <h2>المسئولين</h2>
+                        <img class="img-responsive user-icon" src="img/wsalni.png" alt="كشافة" />
+                        <p class="no-mar"> اذا كنت احد اعضاء الكشافة او من اصحاب الحملات </p>
+                        <a class="btn btn-outline-default wow fadeInLeft user-btn home-btn" href="campaignLogin.aspx">تسجيل كمسئول </a>
+                    </div>
+                  <!--  <div class="col-md-4 user-part">
+                        <img class="img-responsive user-icon" src="img/hamlati.png" alt="حملة" />
+                        <a class="btn btn-outline-default wow fadeInLeft user-btn" href="campaignLogin.aspx">حملة</a>
+                    </div> -->
+                        </div>
+>>>>>>> update project files
                 </div>
             </div>
             <!--  <a class="btn btn-outline-default wow fadeInLeft" href="#">Contact us</a> 
@@ -42,6 +76,58 @@
     </div>
     <!-- about us Page
     ==========================================-->
+<<<<<<< 52f11ac17cdf37e556215e9253796f1a30418b55
+=======
+    <section id="about-us-block">
+        <div class="container">
+            <div class="row">
+                <!--section-title-->
+                <div class="section-title text-center">
+                    <h2 class="wow fadeInUp">عن الموقع</h2>
+                    <p class="wow zoomIn">موجود هي منصة تربط السلطات الحكومية ومسئولين حملات الحجاج والحجاج بعضهم ببعض لايجاد من التائهين بسهولة حيث يمكنك ان تبلغ عن احد الحجاج المفقودين ويصل بلاغك للسلطات وتتابع معهم حالة وصولة ويمكن ايضا ان تبلغ عن كونك تائه او كون احد من حولك تائهة وتساعده للوصول الي مجموعته </p>
+                </div>
+                <!--/section-title-->
+
+                <!--col-1-->
+                <div class="col-md-4 col-sm-4 col-about-us wow fadeInLeft">
+                    <div class="col-md-12">
+                        <div class="c-block found-user">
+                            <span class="counter">10</span><i class="fa fa-user"></i>
+                            <h4>الموجودين</h4>
+                            <p>هم الذين تم ايجادهم وتغير حالتهم تائه او مفقود الي موجود </p>
+                        </div>
+                    </div>
+                </div>
+                <!--/col-1-->
+
+                <!--col-2-->
+                <div class="col-md-4 col-sm-4 col-about-us wow zoomIn">
+                    <div class="col-md-12">
+                        <div class="c-block lost-user">
+                            <span class="counter">15</span><i class="fa fa-user"></i>
+                            <h4>التائهين</h4>
+                            <p>هم الذين ابلغوا عن انفسهم انهم تائهين</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/col-2-->
+
+                <!--col-3-->
+                <div class="col-md-4 col-sm-4 col-about-us wow fadeInRight">
+                    <div class="col-md-12">
+                        <div class="c-block losta-user">
+                            <span class="counter">2</span><i class="fa fa-user"></i>
+                            <h4>التائهين</h4>
+                            <p>هم الذين ابلغوا عن انفسهم انهم تائهين</p>
+                        </div>
+                    </div>    
+                </div>
+                <!--/col-3-->
+
+            </div>
+        </div>
+    </section>
+>>>>>>> update project files
     <%--<section id="about-us-block">
   <div class="container">
     <div class="row"> 
